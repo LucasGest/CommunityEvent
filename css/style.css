@@ -1,0 +1,286 @@
+:root {
+	--text: "Roboto", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f7f7f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a {
+	font-family: var(--text);
+}
+
+h3{
+    font-size: 24px;
+}
+
+/****************************************************************************************************************************/
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 70px 100px;
+}
+
+header nav ul li {
+	display: inline;
+	list-style: none;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: black;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 2px;
+	border: solid 1px black;
+}
+
+header nav ul li a:hover {
+	background: black;
+	color: white;
+}
+
+/****************************************************************************************************************************/
+
+main {
+	padding: 0px 100px;
+}
+
+/****************************************************************************************************************************/
+
+#presentation {
+	margin: 0px 0px 50px;
+}
+
+#presentation h3 {
+	text-decoration: underline;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 200;
+}
+
+#presentation h3#mainTitle {
+	text-align: center;
+	font-size: 32px;
+	text-decoration: none;
+	padding-bottom: 70px;
+	font-weight: 600;
+}
+
+#presentation p {
+	padding: 0px 50px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+/****************************************************************************************************************************/
+
+#streamers {
+	padding: 50px 100px;
+	text-align: center;
+}
+
+#streamers h3 {
+	font-size: 48px;
+	padding-bottom: 100px;
+}
+
+#streamers #grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#streamers #grid .content {
+	padding: 10px;
+	margin: 10px 90px;
+	border: 1px black solid;
+}
+
+#streamers #grid .content h3 {
+	font-size: 21px;
+	padding-bottom: 10px;
+}
+
+#streamers #grid .content .btn {
+	padding: 20px 0px;
+}
+
+#streamers #grid .content .btn a {
+	text-decoration: none;
+	color: white;
+	background: black;
+	padding: 10px 20px;
+}
+
+#streamers #grid .content img {
+	width: 50%;
+}
+
+/****************************************************************************************************************************/
+
+#games{
+    margin: 0px 0px 50px;
+}
+
+#games h3{
+    text-align: center;
+    padding: 0px 0px 50px;
+    font-size: 40px;
+}
+
+#games #nuzlockPokemon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+#games #nuzlockPokemon img{
+    width: 70%;
+}
+
+#games #nuzlockPokemon .content h4{
+    font-size: 24px;
+}
+
+#games #nuzlockPokemon .content ul {
+    margin: 0px 100px;
+}
+
+#games #loupGarou{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+#games #loupGarou img{
+    width: 50%;
+}
+
+#games #loupGarou .content h4{
+    font-size: 24px;
+}
+
+#games #loupGarou .content ul {
+    margin: 0px 100px;
+}
+
+
+/****************************************************************************************************************************/
+
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 70px 100px;
+    background: black;
+    color: white;
+}
+
+footer ul li{
+	display: inline;
+	list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Mentions légales */
+
+.container-mention {
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	width: 1400px;
+}
+
+.container-mention .content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+	gap: 100px;
+}
+
+.container-mention h1 {
+	margin: 20px 0px 30px;
+	text-align: center;
+}
+
+.container-mention p.date {
+	position: absolute;
+	top: 10%;
+	text-align: center;
+}
+
+.container-mention p.description {
+	margin: 100px 0px;
+}
+
+.container-mention h2 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.container-mention p:not(p.description) {
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	width: 320px;
+}
+
+.editeur,
+.hebergeur,
+.site,
+.donnees,
+.cookie,
+.propriete {
+	width: 350px;
+}
+
+.editeur h2,
+.hebergeur h2,
+.site h2,
+.donnees h2,
+.cookie h2,
+.propriete h2 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+p {
+	margin: 20px;
+}
+
+p a.back-to-home {
+	text-decoration: none;
+	color: white;
+	background: black;
+	padding: 10px;
+}
