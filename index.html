@@ -6,6 +6,7 @@
 		<title>Community Event</title>
 
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" href="img/icons/" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,11 +14,16 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
 			rel="stylesheet"
 		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 
 	<body>
 		<header>
-			<h1>Community Event</h1>
+			<img src="img/logo_event.png" alt="logo event" />
 
 			<nav>
 				<ul>
@@ -31,19 +37,33 @@
 		<main>
 			<!-- Présentation -->
 
-			<div id="presentation">
-				<h3 id="mainTitle">
-					Bienvenue pour cette saison 3 de la Community Event !
-				</h3>
+			<!-- <iframe
+				width="920"
+				height="430"
+				src="https://www.youtube.com/embed/yKkpUvbp9jg?si=hVXLB8eT3vG00Ohb"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+			></iframe> -->
 
-				<p>
+			<div id="presentation">
+				<div class="content">
+					<img src="img/icons/couronne.png" alt="couronne" />
+					<h3 id="mainTitle">
+						Bienvenue pour cette saison 3 de la Community Event !
+					</h3>
+					<img id="img-twice" src="img/icons/couronne.png" alt="couronne" />
+				</div>
+
+				<p id="mainText">
 					Cette année on voit en grand, on pousse le bouchon très loin ! Le
 					noyau de l'événement ne change pas. Il n'est toujours pas caritatif ou
 					lucratif. Il est un rassemblement de streamers et de joueurs, nous ne
 					voulons pas confiner l'attention que sur les streamers.
 				</p>
 
-				<h3>Comment cela se passe en live ?</h3>
+				<h3>Comment cela se passera t'il en live ?</h3>
 
 				<p>
 					Les streamers lancent leurs live comme à leur habitude. Pas de forçage
@@ -72,23 +92,13 @@
 					hypés peuvent rejoindre !
 				</p>
 			</div>
-
-			<iframe
-				width="560"
-				height="315"
-				src="https://www.youtube.com/embed/yKkpUvbp9jg?si=hVXLB8eT3vG00Ohb"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen
-			></iframe>
 		</main>
 		<div id="streamers">
 			<h3>La liste des streamers !</h3>
 			<div id="grid">
 				<div class="content">
 					<h3>Biskar</h3>
-					<img src="img/logo_biskar.jpg" alt="biskar"/>
+					<img src="img/logo_biskar.jpg" alt="biskar" />
 					<div class="btn">
 						<a href="https://www.twitch.tv/biskar8">Voir sur twitch</a>
 					</div>
@@ -96,7 +106,7 @@
 
 				<div class="content">
 					<h3>BotrlTV</h3>
-					<img src="img/logo_bot.png" alt="botrltv"/>
+					<img src="img/logo_bot.png" alt="botrltv" />
 					<div class="btn">
 						<a href="https://www.twitch.tv/botrltv">Voir sur twitch</a>
 					</div>
@@ -104,7 +114,7 @@
 
 				<div class="content">
 					<h3>Lucanemone</h3>
-					<img src="img/logo_lucanemone.png" alt="lucanemone"/>
+					<img src="img/logo_lucanemone.png" alt="lucanemone" />
 					<div class="btn">
 						<a href="https://www.twitch.tv/lucanemone">Voir sur twitch</a>
 					</div>
@@ -112,7 +122,7 @@
 
 				<div class="content">
 					<h3>Master67</h3>
-					<img src="img/logo_master.png" alt="master67"/>
+					<img src="img/logo_master.png" alt="master67" />
 					<div class="btn">
 						<a href="https://www.twitch.tv/master67">Voir sur twitch</a>
 					</div>
@@ -120,7 +130,7 @@
 
 				<div class="content">
 					<h3>PandaVif</h3>
-					<img src="img/logo_pandaVif.jpg" alt="PandaVif"/>
+					<img src="img/logo_pandaVif.jpg" alt="PandaVif" />
 					<div class="btn">
 						<a href="https://www.twitch.tv/pandavif">Voir sur twitch</a>
 					</div>
@@ -152,6 +162,12 @@
 				</ul>
 			</div>
 		</footer>
+		<div class="text_footer">
+			<p>Copyright <img src="img/bx-copyright.svg" alt="" /> 2023</p>
+		</div>
+
+		<div class="form_one"></div>
+		<div class="form_two"><img src="img/blob.svg" alt="" /></div>
 	</body>
 
 	<script src="js/index.js" type="text/javascript"></script>

@@ -1,5 +1,10 @@
 :root {
 	--text: "Roboto", sans-serif;
+	--title: "Anton", sans-serif;
+	--color-one: rgb(223, 51, 182);
+	--color-two: rgb(176, 28, 142);
+	--color-three: rgb(8, 0, 34);
+	--color-four: rgb(23, 236, 255);
 }
 
 * {
@@ -9,30 +14,75 @@
 }
 
 body {
-	background: #f7f7f7;
+	background: var(--color-three);
+	overflow-x: hidden;
 }
 
 h1,
 h2,
 h3,
-h4,
+h4 {
+	font-family: var(--title);
+	font-weight: 100;
+	color: var(--color-one);
+}
+
 p,
 li,
 a {
 	font-family: var(--text);
+	color: white;
 }
 
-h3{
-    font-size: 24px;
+h3 {
+	font-size: 24px;
 }
+
+.form_one{
+	position: absolute;
+	top: -20%;
+	left: -2%;
+	z-index: -6;
+	width: 100px;
+	height: 100%;
+	transform: rotate(20deg);
+	background-color: var(--color-one);
+}
+
+.form_two{
+	position: absolute;
+	top: 60%;
+	right: -40%;
+	width: 70%;
+	z-index: -6;
+	transform: rotate(20deg);
+}
+
+.text_footer{
+	text-align: center;
+	background-color: black;
+}
+
+.text_footer p{
+	margin: 0;
+}
+
+.text_footer img{
+	width: 1%;
+}
+
 
 /****************************************************************************************************************************/
 
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	padding: 70px 100px;
+}
+
+header img{
+	width: 15%;
 }
 
 header nav ul li {
@@ -42,56 +92,73 @@ header nav ul li {
 
 header nav ul li a {
 	text-decoration: none;
-	color: black;
+	color: var(--color-one);
 	margin: 10px;
 	padding: 5px;
 	border-radius: 2px;
-	border: solid 1px black;
+	border: solid 1px var(--color-one);
 }
 
 header nav ul li a:hover {
-	background: black;
+	background: var(--color-one);
 	color: white;
 }
 
 /****************************************************************************************************************************/
 
 main {
-	padding: 0px 100px;
+	padding: 0px 200px;
 }
 
 /****************************************************************************************************************************/
 
-#presentation {
-	margin: 0px 0px 50px;
+#presentation .content{
+	display: flex;
+	align-items: center;
+}
+
+#presentation .content img{
+	width: 5%;
+	height: 5%;
+	transform: translateX(120px) translateY(-29px);
+}
+
+#presentation .content img#img-twice{
+	transform: translateX(-120px) translateY(-29px);
 }
 
 #presentation h3 {
 	text-decoration: underline;
-	padding-bottom: 20px;
 	text-align: center;
 	font-size: 24px;
 	font-weight: 200;
+	color: white;
+	background: var(--color-one);
+	margin: 0px 320px;
 }
 
 #presentation h3#mainTitle {
+	margin: auto;
+	background-color: transparent;
 	text-align: center;
 	font-size: 32px;
 	text-decoration: none;
-	padding-bottom: 70px;
-	font-weight: 600;
+	padding: 0px 0px 50px;
+	font-weight: 100;
+	color: white;
 }
 
 #presentation p {
-	padding: 0px 50px;
+	padding: 0px 50px ;
 	padding-bottom: 20px;
 	text-align: justify;
 }
 
-iframe{
-    display: block;
-    margin: 0 auto;
-}
+/* iframe {
+	display: block;
+	margin: 0px auto 50px;
+} */
+
 /****************************************************************************************************************************/
 
 #streamers {
@@ -101,7 +168,10 @@ iframe{
 
 #streamers h3 {
 	font-size: 48px;
-	padding-bottom: 100px;
+	padding: 50px 0px;
+	color: white;
+	border-top: solid;
+	border-bottom: solid;
 }
 
 #streamers #grid {
@@ -112,12 +182,12 @@ iframe{
 #streamers #grid .content {
 	padding: 10px;
 	margin: 10px 90px;
-	border: 1px black solid;
 }
 
 #streamers #grid .content h3 {
-	font-size: 21px;
+	font-size: 32px;
 	padding-bottom: 10px;
+	border: none;
 }
 
 #streamers #grid .content .btn {
@@ -127,7 +197,7 @@ iframe{
 #streamers #grid .content .btn a {
 	text-decoration: none;
 	color: white;
-	background: black;
+	background: var(--color-one);
 	padding: 10px 20px;
 }
 
@@ -137,76 +207,81 @@ iframe{
 
 /****************************************************************************************************************************/
 
-#games{
-    margin: 0px 0px 50px;
+#games .content img{
+	width: 5%;
+	height: 5%;
+	transform: translateX(120px) translateY(-29px);
 }
 
-#games h3{
-    text-align: center;
-    padding: 0px 0px 50px;
-    font-size: 40px;
+#games .content img#img-twice{
+	transform: translateX(-120px) translateY(-29px);
+}
+
+#games h3 {
+	text-align: center;
+	padding: 0px 0px 50px;
+	font-size: 32px;
+	color: white;
 }
 
 #games #nuzlockPokemon {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
 }
 
-#games #nuzlockPokemon img{
-    width: 70%;
+#games #nuzlockPokemon img {
+	width: 70%;
 }
 
-#games #nuzlockPokemon .content h4{
-    font-size: 24px;
+#games #nuzlockPokemon .content h4 {
+	font-size: 24px;
 }
 
 #games #nuzlockPokemon .content ul {
-    margin: 0px 100px;
+	margin: 0px 100px;
 }
 
-#games #loupGarou{
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
+#games #loupGarou {
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
 }
 
-#games #loupGarou img{
-    width: 50%;
+#games #loupGarou img {
+	width: 50%;
 }
 
-#games #loupGarou .content h4{
-    font-size: 24px;
+#games #loupGarou .content h4 {
+	font-size: 24px;
 }
 
 #games #loupGarou .content ul {
-    margin: 0px 100px;
+	margin: 0px 100px;
 }
-
 
 /****************************************************************************************************************************/
 
-
-footer{
+footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: baseline;
 	padding: 70px 100px;
-    background: black;
-    color: white;
+	background: black;
+	color: white;
 }
 
-footer ul li{
+footer ul li {
 	display: inline;
 	list-style: none;
 }
 
-footer ul li a{
-    text-decoration: none;
-    color: white;
+footer ul li a {
+	text-decoration: none;
+	color: white;
 }
 
 /* Mentions légales */
