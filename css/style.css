@@ -38,7 +38,7 @@ h3 {
 	font-size: 24px;
 }
 
-.form_one{
+.form_one {
 	position: absolute;
 	top: -20%;
 	left: -2%;
@@ -49,7 +49,7 @@ h3 {
 	background-color: var(--color-one);
 }
 
-.form_two{
+.form_two {
 	position: absolute;
 	top: 60%;
 	right: -40%;
@@ -58,19 +58,31 @@ h3 {
 	transform: rotate(20deg);
 }
 
-.text_footer{
+#games h3#mainTitle,
+#presentation h3#mainTitle,
+#creators h3#mainTitle {
+	margin: auto;
+	background-color: transparent;
+	text-align: center;
+	font-size: 32px;
+	text-decoration: none;
+	padding: 0px 0px 50px;
+	font-weight: 100;
+	color: white;
+}
+
+.text_footer {
 	text-align: center;
 	background-color: black;
 }
 
-.text_footer p{
+.text_footer p {
 	margin: 0;
 }
 
-.text_footer img{
+.text_footer img {
 	width: 1%;
 }
-
 
 /****************************************************************************************************************************/
 
@@ -81,7 +93,7 @@ header {
 	padding: 70px 100px;
 }
 
-header img{
+header img {
 	width: 15%;
 }
 
@@ -112,18 +124,18 @@ main {
 
 /****************************************************************************************************************************/
 
-#presentation .content{
+#presentation .content {
 	display: flex;
 	align-items: center;
 }
 
-#presentation .content img{
+#presentation .content img {
 	width: 5%;
 	height: 5%;
 	transform: translateX(120px) translateY(-29px);
 }
 
-#presentation .content img#img-twice{
+#presentation .content img#img-twice {
 	transform: translateX(-120px) translateY(-29px);
 }
 
@@ -137,19 +149,8 @@ main {
 	margin: 0px 320px;
 }
 
-#presentation h3#mainTitle {
-	margin: auto;
-	background-color: transparent;
-	text-align: center;
-	font-size: 32px;
-	text-decoration: none;
-	padding: 0px 0px 50px;
-	font-weight: 100;
-	color: white;
-}
-
 #presentation p {
-	padding: 0px 50px ;
+	padding: 0px 50px;
 	padding-bottom: 20px;
 	text-align: justify;
 }
@@ -207,21 +208,14 @@ main {
 
 /****************************************************************************************************************************/
 
-#games .content img{
+#games .content img {
 	width: 5%;
 	height: 5%;
 	transform: translateX(120px) translateY(-29px);
 }
 
-#games .content img#img-twice{
+#games .content img#img-twice {
 	transform: translateX(-120px) translateY(-29px);
-}
-
-#games h3 {
-	text-align: center;
-	padding: 0px 0px 50px;
-	font-size: 32px;
-	color: white;
 }
 
 #games #nuzlockPokemon {
@@ -261,6 +255,45 @@ main {
 
 #games #loupGarou .content ul {
 	margin: 0px 100px;
+}
+
+/****************************************************************************************************************************/
+
+#creators .title {
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 2px;
+}
+
+#creators h2 {
+	padding: 10px;
+	background: url("../img/FondDecranTitle.jpg");
+	background-size: cover;
+	background-position: center;
+	-webkit-background-clip: text;
+	color: #ffffff14;
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	user-select: none;
+	text-align: center;
+	font-weight: 100;	
+}
+
+#creators ul{
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 0px 50px 0px;
+}
+
+#creators ul li{
+	list-style: none;
+
 }
 
 /****************************************************************************************************************************/
