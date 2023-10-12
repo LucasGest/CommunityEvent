@@ -1,174 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Community Event</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site internet officiel de la community event. Ce site regroupera toutes les catégories que soit les streamers ou les jeux auxquels ils joueront. Vous pourrez retrouver les liens des chaines twitch dans les bons onglets." />
+    <title>Community Event</title>
 
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="icon" href="img/icons/" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="img/icons/" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-			rel="stylesheet"
-		/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet" />
 
-		<link
-			href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet" />
+  </head>
 
-	<body>
-		<header>
-			<img src="img/logo_event.png" alt="logo event" />
+  <body>
+    <header>
+      <img src="img/logo_event.png" alt="logo event" />
 
-			<nav>
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="menu/event.html">Evènement</a></li>
-					<li><a href="menu/apropos.html">A propos</a></li>
-				</ul>
-			</nav>
-		</header>
+      <nav>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Accueil</a></li>
+          <li><a class="menu__item" href="menu/event.html">Evènement</a></li>
+          <li><a class="menu__item" href="menu/apropos.html">A propos</a></li>
+        </ul>
+      </nav>
 
-		<main>
-			<!-- Présentation -->
+      <!-- Hamburger menu -->
 
-			<!-- <iframe
-				width="920"
-				height="430"
-				src="https://www.youtube.com/embed/yKkpUvbp9jg?si=hVXLB8eT3vG00Ohb"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen
-			></iframe> -->
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="../index.html">Accueil</a></li>
+          <li><a class="menu__item" href="menu/event.html">Evènement</a></li>
+          <li><a class="menu__item" href="menu/apropos.html">A propos</a></li>
+        </ul>
+      </div>
+    </header>
 
-			<div id="presentation">
-				<div class="content">
-					<img src="img/icons/couronne.png" alt="couronne" />
-					<h3 id="mainTitle">
-						Bienvenue pour cette saison 3 de la Community Event !
-					</h3>
-					<img id="img-twice" src="img/icons/couronne.png" alt="couronne" />
-				</div>
+    <main>
+      <!-- Présentation -->
 
-				<p id="mainText">
-					Cette année on voit en grand, on pousse le bouchon très loin ! Le
-					noyau de l'événement ne change pas. Il n'est toujours pas caritatif ou
-					lucratif. Il est un rassemblement de streamers et de joueurs, nous ne
-					voulons pas confiner l'attention que sur les streamers.
-				</p>
+      <div id="presentation">
+        <div class="content">
+          <img src="img/icons/couronne.png" alt="couronne" />
+          <h1 id="mainTitle">
+            Bienvenue pour cette saison 3 de la Community Event !
+          </h1>
+          <img id="img-twice" src="img/icons/couronne.png" alt="couronne" />
+        </div>
 
-				<h3>Comment cela se passera t'il en live ?</h3>
+        <p id="mainText">
+          Cette année on voit en grand, on pousse le bouchon très loin ! Le
+          noyau de l'événement ne change pas. Il n'est toujours pas caritatif ou
+          lucratif. Il est un rassemblement de streamers et de joueurs, nous ne
+          voulons pas confiner l'attention que sur les streamers.
+        </p>
 
-				<p>
-					Les streamers lancent leurs live comme à leur habitude. Pas de forçage
-					au niveau du contenu à faire. Vous jouez à <b>VOS JEUX</b>. Une petite
-					mention pour le.s créateur.s est conseillé mais pas obligatoire. Bien
-					évidemment, si les viewers veulent faire des dons, subs sur votre
-					chaîne, ils peuvent. Comme dit aucune cagnotte commune et mise en
-					place donc c'est votre argent durement gagner.
-				</p>
+        <h3>Comment cela se passera t'il en live ?</h3>
 
-				<h3>Que se passera t'il lors de cette événement ?</h3>
+        <p>
+          Les streamers lancent leurs live comme à leur habitude. Pas de forçage
+          au niveau du contenu à faire. Vous jouez à <b>VOS JEUX</b>. Une petite
+          mention pour le.s créateur.s est conseillé mais pas obligatoire. Bien
+          évidemment, si les viewers veulent faire des dons, subs sur votre
+          chaîne, ils peuvent. Comme dit aucune cagnotte commune et mise en
+          place donc c'est votre argent durement gagner.
+        </p>
 
-				<p>
-					Comme dit précédemment, la Community Event est un event communautaire
-					et non un event caritatif ou lucratif. Les streamers ou les joueurs
-					pourront se croiser et jouer ensemble. On ouvre un nouveau type
-					d'événement qui cible : la communauté et le bohneur.
-				</p>
+        <h3>Que se passera t'il lors de cette événement ?</h3>
 
-				<h3>Pourquoi devrais-je participer ?</h3>
+        <p>
+          Comme dit précédemment, la Community Event est un event communautaire
+          et non un event caritatif ou lucratif. Les streamers ou les joueurs
+          pourront se croiser et jouer ensemble. On ouvre un nouveau type
+          d'événement qui cible : la communauté et le bohneur.
+        </p>
 
-				<p>
-					Nous ne forçons personne à venir et jouer. On part du principe que si
-					quelqu'un vient et qu'il n'est pas attiré, enjoué et motivé pour ce
-					genre d'event, vaut mieux s'abstenir. Par contre, toutes personnes
-					hypés peuvent rejoindre !
-				</p>
-			</div>
-		</main>
-		<div id="streamers">
-			<h3>La liste des streamers !</h3>
-			<div id="grid">
-				<div class="content">
-					<h3>Biskar</h3>
-					<img src="img/logo_biskar.jpg" alt="biskar" />
-					<div class="btn">
-						<a href="https://www.twitch.tv/biskar8">Voir sur twitch</a>
-					</div>
-				</div>
+        <h3>Pourquoi devrais-je participer ?</h3>
 
-				<div class="content">
-					<h3>BotrlTV</h3>
-					<img src="img/logo_bot.png" alt="botrltv" />
-					<div class="btn">
-						<a href="https://www.twitch.tv/botrltv">Voir sur twitch</a>
-					</div>
-				</div>
+        <p>
+          Nous ne forçons personne à venir et jouer. On part du principe que si
+          quelqu'un vient et qu'il n'est pas attiré, enjoué et motivé pour ce
+          genre d'event, vaut mieux s'abstenir. Par contre, toutes personnes
+          hypés peuvent rejoindre !
+        </p>
+      </div>
+    </main>
+    <div id="streamers">
+      <h3>La liste des streamers !</h3>
+      <div id="grid">
+        <div class="content">
+          <h3>Biskar</h3>
+          <img src="img/logo_biskar.jpg" alt="biskar" />
+          <div class="btn">
+            <a href="https://www.twitch.tv/biskar8">Voir sur twitch</a>
+          </div>
+        </div>
 
-				<div class="content">
-					<h3>Lucanemone</h3>
-					<img src="img/logo_lucanemone.png" alt="lucanemone" />
-					<div class="btn">
-						<a href="https://www.twitch.tv/lucanemone">Voir sur twitch</a>
-					</div>
-				</div>
+        <div class="content">
+          <h3>BotrlTV</h3>
+          <img src="img/logo_bot.png" alt="botrltv" />
+          <div class="btn">
+            <a href="https://www.twitch.tv/botrltv">Voir sur twitch</a>
+          </div>
+        </div>
 
-				<div class="content">
-					<h3>Master67</h3>
-					<img src="img/logo_master.png" alt="master67" />
-					<div class="btn">
-						<a href="https://www.twitch.tv/master67">Voir sur twitch</a>
-					</div>
-				</div>
+        <div class="content">
+          <h3>Lucanemone</h3>
+          <img src="img/logo_lucanemone.png" alt="lucanemone" />
+          <div class="btn">
+            <a href="https://www.twitch.tv/lucanemone">Voir sur twitch</a>
+          </div>
+        </div>
 
-				<div class="content">
-					<h3>PandaVif</h3>
-					<img src="img/logo_pandaVif.jpg" alt="PandaVif" />
-					<div class="btn">
-						<a href="https://www.twitch.tv/pandavif">Voir sur twitch</a>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="content">
+          <h3>Master67</h3>
+          <img src="img/logo_master.png" alt="master67" />
+          <div class="btn">
+            <a href="https://www.twitch.tv/master67">Voir sur twitch</a>
+          </div>
+        </div>
 
-		<footer>
-			<div id="obligatoire">
-				<h4>Obligatoires</h4>
-				<ul>
-					<li><a href="menu/mention_legale.html">Mentions légales</a></li>
-				</ul>
-			</div>
+        <div class="content">
+          <h3>PandaVif</h3>
+          <img src="img/logo_pandaVif.jpg" alt="PandaVif" />
+          <div class="btn">
+            <a href="https://www.twitch.tv/pandavif">Voir sur twitch</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<div id="externes">
-				<h4>Liens externes</h4>
-				<ul>
-					<li>
-						<a href="https://twitter.com/CommunityE9451"
-							><img src="img/icons/bxl-twitter.svg" alt="Twitter"
-						/></a>
-					</li>
-					<li>
-						<a href="https://discord.gg/PyBW7pkJVJ"
-							><img src="img/icons/bxl-discord-alt.svg" alt="Discord"
-						/></a>
-					</li>
-				</ul>
-			</div>
-		</footer>
-		<div class="text_footer">
-			<p>Copyright <img src="img/bx-copyright.svg" alt="" /> 2023</p>
-		</div>
+    <footer>
+      <div id="obligatoire">
+        <h4>Obligatoires</h4>
+        <ul>
+          <li><a href="menu/mention_legale.html">Mentions légales</a></li>
+        </ul>
+      </div>
 
-		<div class="form_one"></div>
-		<div class="form_two"><img src="img/blob.svg" alt="" /></div>
-	</body>
+      <div id="externes">
+        <h4>Liens externes</h4>
+        <ul>
+          <li>
+            <a href="https://twitter.com/CommunityE9451"
+              ><img src="img/icons/bxl-twitter.svg" alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://discord.gg/PyBW7pkJVJ"
+              ><img src="img/icons/bxl-discord-alt.svg" alt="Discord"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="text_footer">
+      <p>
+        Copyright
+        <img src="img/bx-copyright.svg" alt="Logo de Copyright" /> 2023
+      </p>
+    </div>
 
-	<script src="js/index.js" type="text/javascript"></script>
+    <div class="form_one"></div>
+    <div class="form_two"><img src="img/blob.svg" alt="Forme abstraite" /></div>
+  </body>
+
+  <script src="js/index.js" type="text/javascript"></script>
 </html>

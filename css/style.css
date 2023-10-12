@@ -13,6 +13,10 @@
 	box-sizing: border-box;
 }
 
+.hamburger-menu{
+	display: none;
+}
+
 body {
 	background: var(--color-three);
 	overflow-x: hidden;
@@ -58,9 +62,36 @@ h3 {
 	transform: rotate(20deg);
 }
 
-#games h3#mainTitle,
-#presentation h3#mainTitle,
-#creators h3#mainTitle {
+.form_three {
+	position: absolute;
+	top: 180%;
+	left: -40%;
+	width: 70%;
+	z-index: -6;
+	transform: rotate(20deg);
+}
+
+.form_four {
+	position: absolute;
+	top: 280%;
+	right: -40%;
+	width: 70%;
+	z-index: -6;
+	transform: rotate(20deg);
+}
+
+.form_five {
+	position: absolute;
+	top: 380%;
+	left: -40%;
+	width: 70%;
+	z-index: -6;
+	transform: rotate(20deg);
+}
+
+#games h1#mainTitle,
+#presentation h1#mainTitle,
+#creators h1#mainTitle {
 	margin: auto;
 	background-color: transparent;
 	text-align: center;
@@ -155,11 +186,6 @@ main {
 	text-align: justify;
 }
 
-/* iframe {
-	display: block;
-	margin: 0px auto 50px;
-} */
-
 /****************************************************************************************************************************/
 
 #streamers {
@@ -208,14 +234,15 @@ main {
 
 /****************************************************************************************************************************/
 
-#games .content img {
+#games .content img{
 	width: 5%;
 	height: 5%;
-	transform: translateX(120px) translateY(-29px);
+	transform: translate(200px, 45px);
 }
 
-#games .content img#img-twice {
-	transform: translateX(-120px) translateY(-29px);
+#games .content img#img-twice{
+	transform: translate(860px, -93.5px);
+
 }
 
 #games #nuzlockPokemon {
@@ -282,18 +309,17 @@ main {
 	letter-spacing: 1px;
 	user-select: none;
 	text-align: center;
-	font-weight: 100;	
+	font-weight: 100;
 }
 
-#creators ul{
+#creators ul {
 	display: flex;
 	justify-content: space-around;
 	margin: 50px 0px 50px 0px;
 }
 
-#creators ul li{
+#creators ul li {
 	list-style: none;
-
 }
 
 /****************************************************************************************************************************/
@@ -317,7 +343,7 @@ footer ul li a {
 	color: white;
 }
 
-/* Mentions légales */
+/****************************************************************************************************************************/
 
 .container-mention {
 	margin-top: 100px;
