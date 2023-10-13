@@ -21,5 +21,5 @@ pourront se croiser et jouer ensemble. On ouvre un nouveau type d'événement qu
 Nous ne forçons personne à venir et jouer. On part du principe que si quelqu'un vient et qu'il n'est pas attiré, enjoué et motivé pour ce
 genre d'event, vaut mieux s'abstenir. Par contre, toutes personnes hypés peuvent rejoindre !
 
-[Discord]()
+[Discord](https://discord.gg/PyBW7pkJVJ)
 [Twitter](https://twitter.com/CommunityE9451)
