@@ -55,7 +55,7 @@ function compte_a_rebours() {
       mot_seconde = "";
       // et = "";
     } else if (secondes == 1) {
-      mot_seconde = "seconde";
+      mot_seconde = "";
     }
 
     if (minutes == 0 && heures == 0 && jours == 0) {
