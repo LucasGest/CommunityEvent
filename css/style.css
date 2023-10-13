@@ -284,6 +284,26 @@ main {
 	margin: 0px 100px;
 }
 
+#games #valorant {
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
+}
+
+#games #valorant img {
+	width: 50%;
+}
+
+#games #valorant .content h4 {
+	font-size: 24px;
+}
+
+#games #valorant .content ul {
+	margin: 0px 100px;
+}
+
 /****************************************************************************************************************************/
 
 #creators .title {
