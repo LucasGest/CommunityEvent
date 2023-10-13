@@ -22,4 +22,4 @@ Nous ne forçons personne à venir et jouer. On part du principe que si quelqu'u
 genre d'event, vaut mieux s'abstenir. Par contre, toutes personnes hypés peuvent rejoindre !
 
 [Discord]()
-[Twitter]()
+[Twitter](https://twitter.com/CommunityE9451)
