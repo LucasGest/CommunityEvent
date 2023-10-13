@@ -285,7 +285,7 @@ main {
 }
 
 #games #valorant {
-	margin-top: 100px;
+	margin: 100px 0px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
