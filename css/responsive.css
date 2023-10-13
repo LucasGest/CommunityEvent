@@ -135,30 +135,42 @@
 		display: block;
 	}
 
-	#games #nuzlockPokemon .content,
-	#games #loupGarou .content {
-		margin: 0px 20px;
-	}
+	#games #valorant {
+    display: block;
+  }
 
-	#games #nuzlockPokemon .content h4,
-	#games #loupGarou .content h4 {
-		font-size: 16px;
-		text-align: center;
-	}
+  #games #nuzlockPokemon .content,
+  #games #loupGarou .content,
+  #games #valorant .content {
+    margin: 0px 20px;
+  }
 
-	#games #nuzlockPokemon .content ul,
-	#games #loupGarou .content ul {
-		margin: 20px 30px;
-	}
+  #games #nuzlockPokemon .content h4,
+  #games #loupGarou .content h4,
+  #games #valorant .content h4 {
+    font-size: 16px;
+    text-align: center;
+  }
 
-	#games #nuzlockPokemon .content p,
-	#games #loupGarou .content p {
-		margin-top: 20px;
-	}
+  #games #nuzlockPokemon .content ul,
+  #games #loupGarou .content ul,
+  #games #valorant .content ul {
+    margin: 20px 30px;
+  }
 
-	#games #loupGarou {
-		margin: 40px 0px;
-	}
+  #games #nuzlockPokemon .content p,
+  #games #loupGarou .content p,
+  #games #valorant .content p {
+    margin-top: 20px;
+  }
+
+  #games #loupGarou {
+    margin: 40px 0px;
+  }
+
+  #games #valorant {
+    margin: 40px 0px;
+  }
 
     #creators h2{
         font-size: 24px;
