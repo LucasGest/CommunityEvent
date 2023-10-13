@@ -17,7 +17,8 @@
 	#img-twice,
 	h1#mainTitle,
 	#games #nuzlockPokemon img,
-	#games #loupGarou img {
+	#games #loupGarou img,
+	#compte_a_rebours{
 		display: none;
 	}
 
